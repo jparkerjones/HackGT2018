@@ -3,7 +3,7 @@
 char a = 'A';
 int b = 0;
 void setup() {
-  Wire.begin();
+  Wire.begin(9);
   Serial.begin(9600);
 
 }

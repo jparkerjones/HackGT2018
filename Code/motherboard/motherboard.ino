@@ -7,58 +7,43 @@
 String curCommand = "";
 bool output_graphics = false;
 
-
-
-
-
-
-
 void setup() {
-  Bridge.begin();
-  SerialUSB.begin(9600);
+  //Bridge.begin();
+  //SerialUSB.begin(9600); ??
+  
   Wire.begin(motherboard_addr);
-  Wire.onReceive(recieve_KeyboardInput);    // register event
-  // Serial.begin(9600); ??
+  Wire.onReceive(receive_KeyboardEvent);    // register event
+  Serial.begin(9600);
 
 }
 
-int x = 0;
+int x;
 void loop() {
+  //Read Keyboard Inputs
 
-  
-                    //Read Keyboard Inputs
 
+  //Send typed info to monitor
   if (output_graphics) {
-    Wire.beginTransmission(graphics_addr); // transmit to device #9
-    Wire.write("slave_x is ");        // sends five bytes
+    Wire.beginTransmission(graphics_addr); // transmit to device #10
+    Wire.write("motherboard_x is ");        // sends five bytes
     Wire.write(x);              // sends one byte
     Wire.endTransmission();    // stop transmitting
   
     //x++;
+    output_graphics = false;
   }
 
-                    //Send typed info to monitor
+  //If enter has been pressed, run command
 
-
-
-
-
-
-                    //If enter has been pressed, run command
-
-
-
-
-
-
-
-                    //If command has been run, send return values to monitor
-
+  //If command has been run, send return values to monitor
+  
+  delay(500);
+  output_graphics = true;
 }
 
 // function that executes whenever data is received from master
 // this function is registered as an event, see setup()
-void recieve_KeyboardInput(int howMany) {
+void receive_KeyboardEvent(int howMany) {
   while (1 < Wire.available()) { // loop through all but the last
     char c = Wire.read(); // receive byte as a character
     Serial.print(c);         // print the character

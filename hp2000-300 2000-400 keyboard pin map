@@ -1,0 +1,49 @@
+esc - f1 - f2 - f3 - f4 - f5 - f6 - f7 - f8 - f9 - f10 - f11 - f12 - insert - prtsc - del
+` - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 0 - minus - = - backspace - home
+tab - Q - W - E - R - T - Y - U - I - O - P - [ - ] - \ - pgUp
+cap - A - S - D - F - G - H - J - K - L - ; - ' - enter - pgDown
+shift(left) - Z - X - C - V - B - N - M - < - > - / - shift(right) - end
+ctrl(left) - fn - windows - alt(left) - space - alt(right) - book - ctrl(right) - leftArr - upArr - downArr - rightArr
+
+bottom1 - esc - f4 - f7 - f11 - insert - backspace                                  6
+bottom2 - Q - W - E - R - U - I - O - P - leftArr - shift(right) - upArr            11
+bottom3 - alt(left) - downArr - rightArr - 0 - 9 - 8 - 7 - 4 - 3 - 2 - 1            11
+bottom4 - A - S - D - F - J - K - L - ; - ctrl(right) - enter - pgDown              11
+bottom5 - shift(left) - Z - X - C - V - space - M - < - > - / - end                 11
+bottom6 - ctrl(left) - tab - f3 - f6 - Y - T - f10 - [ - ] - home                   10
+bottom7 - book - fn - ` - f2 - f5 - 5 - 6 - f9 - minus - \ - pgUp                   11
+bottom8 - f1 - f8 - f12 - prtsc - del - = - alt(right) - N - B - cap                10
+windows - G - H - '                                                                 4
+
+
+out1 - top1
+out2 - top2
+out3 - top3
+out4 - shift(left) - shift(right)                                                   2
+out5 - top4
+out6 - top5
+out7 - ctrl(left) - ctrl(right)                                                     2
+out8 - top6
+out9 - top7
+out10 - f8 - f7 - f6 - f5 - 2 - W - S - X                                           8
+out11 - esc - ` - 1 - tab - Q - cap - A - Z                                         8
+out12 - top8
+out13 - f1 - f2 - f3 - f4 - 3 - E - D - C                                           8
+out14 - 4 - 5 - T - R - F - V - B - G                                               8
+out15 - fn                                                                          1
+out16 - 6 - 7 - Y - U - H - N - J - M                                               8
+out17 - 8 - I - ] - K - <                                                           5
+out18 - windows                                                                     1
+out19 - book                                                                        1
+out20 - alt(left) - alt(right)                                                      2
+out21 - prtsc - backspace - \ - enter - upArr - downArr - space                     7
+out22 - f12 - f11 - f10 - f9 - 9 - O - L - >                                        8
+out23 - 0 - minus - = - [ - P - ; - ' - /                                           8
+out24 - insert - del - home - pgUp - pgDown - end - rightArr - leftArr              8
+out25 - LED_cap+
+out26 - LED_cap-
+out27 - LED-f12+
+out28 - LED-f12-
+
+
+

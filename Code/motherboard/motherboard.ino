@@ -8,8 +8,8 @@ String curCommand = "";
 bool output_graphics = false;
 
 void setup() {
-  //Bridge.begin();
-  //SerialUSB.begin(9600); ??
+  Bridge.begin();
+  SerialUSB.begin(9600); 
   
   Wire.begin(motherboard_addr);
   Wire.onReceive(receive_KeyboardEvent);    // register event
